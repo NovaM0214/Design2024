@@ -1,0 +1,148 @@
+<html><head><base href="https://graphicdesign.showcase/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphic Design Showcase - Reversible Cards</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .card-front {
+    background-color: #3498db;
+    color: white;
+    overflow: hidden;
+  }
+  .card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card-back h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .card-back p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="card-container">
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/564x/8c/9b/62/8c9b6287c887300ed13fbb4d4b1b3894.jpg" alt="Animated logo design process" width="200" height="300">
+          </div>
+          <div class="card-back" style="background-color: #002475; color: white;">
+            <h3>Logo Evolution</h3>
+            <p>Watch as simple sketches transform into a polished brand identity through iterative design stages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/564x/35/71/d9/3571d9e239286a257034d764d76936fd.jpg" alt="Color palette animation" width="200" height="300">
+          </div>
+          <div class="card-back" style="background-color: #cfe3f0; color: white;">
+            <h3>Color Theory</h3>
+            <p>Explore how different color combinations evoke various emotions and set the tone for impactful designs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/564x/ba/e6/1d/bae61d789214c1fa651220c9d705307b.jpg" alt="Typography animation" width="200" height="300">
+          </div>
+          <div class="card-back" style="background-color: #fca350; color: white;">
+            <h3>Typography in Motion</h3>
+            <p>Discover how dynamic text treatments can enhance visual communication and boost user engagement.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/564x/1a/e0/7f/1ae07fa499672ab29f19e8d192a177f4.jpg" alt="UI/UX design interaction" width="200" height="300">
+          </div>
+          <div class="card-back" style="background-color: #fe7036; color: white;">
+            <h3>Interactive UI/UX</h3>
+            <p>Experience the seamless flow of user interface animations that improve usability and delight users.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://i.pinimg.com/564x/27/59/5c/27595c89b9301d68f6b4c5ee7e60f7ae.jpg" alt="Packaging design showcase" width="200" height="300">
+          </div>
+          <div class="card-back" style="background-color: #35258c; color: white;">
+            <h3>Packaging Innovation</h3>
+            <p>Witness the unfolding of creative packaging designs that combine form, function, and visual appeal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body></html>
